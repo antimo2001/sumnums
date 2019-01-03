@@ -50,9 +50,8 @@ yearReport.set('months', monthlyreport.length);
 yearReport.set('total', sumnums(yearReport.get('amounts')));
 yearReport.set('average', yearReport.get('total')/monthlyreport.length);
 yearReport.set('median', median(yearReport.get('amounts')));
-// yearReport.set('median', Math(yearReport.get('amounts')));
-yearReport.set('min', Math.min(yearReport.get('amounts')));
-yearReport.set('max', Math.max(yearReport.get('amounts')));
+// yearReport.set('min', Math.min(yearReport.get('amounts')));
+// yearReport.set('max', Math.max(yearReport.get('amounts')));
 
 //Make a string-version of the yearReport
 const jsonYearReport = [...yearReport].map(p => {
