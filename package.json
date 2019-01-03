@@ -1,0 +1,24 @@
+{
+  "name": "sumnums",
+  "version": "0.0.1",
+  "description": "Sum numbers together",
+  "main": "index.js",
+  "scripts": {
+    "pre-build": "mkdir logs",
+    "build": "npm run bill:year > logs/yearly-report.log",
+    "test": "SET DEBUG=sumnums:* && node index-bills-avg",
+    "test4": "SET DEBUG=sumnums:* && node index 1,2,3",
+    "test3": "SET DEBUG=sumnums:* && node index 1 2 4 8",
+    "test2": "SET DEBUG=sumnums:* && node index 1 2, -3.1",
+    "test1": "SET DEBUG=sumnums:* && node index 1 0.21",
+    "bills": "npm run bill:month",
+    "bill:year": "node index-bills-avg",
+    "bill:month": "node index-bills",
+    "start": "npm run bill:month"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.6.1"
+  }
+}
