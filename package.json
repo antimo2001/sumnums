@@ -6,7 +6,8 @@
   "scripts": {
     "pre-build": "mkdir logs",
     "build": "npm run bill:year > logs/yearly-report.log",
-    "test": "SET DEBUG=sumnums:* && node index-bills-avg",
+    "test": "SET DEBUG=median && node median",
+    "test5": "SET DEBUG=sumnums:* && node index-bills-avg",
     "test4": "SET DEBUG=sumnums:* && node index 1,2,3",
     "test3": "SET DEBUG=sumnums:* && node index 1 2 4 8",
     "test2": "SET DEBUG=sumnums:* && node index 1 2, -3.1",
