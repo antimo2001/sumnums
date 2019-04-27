@@ -1,0 +1,30 @@
+
+> sumnums@0.0.1 test F:\$$__mystuff\node-prototypes\sumnums
+> SET DEBUG=sumnums:* && node index-bills-avg
+
+Show averages report: [
+ {
+  "yyyy-mm": "2017-07",
+  "amounts": "[54,71.39,24.99,360,1155]",
+  "total": 1665.38,
+  "average": 333.076
+ },
+ {
+  "yyyy-mm": "2017-06",
+  "amounts": "[54,197.27,75.95,436.07,1348.29]",
+  "total": 2111.58,
+  "average": 422.316
+ },
+ {
+  "yyyy-mm": "2017-05",
+  "amounts": "[54,50.84,1183,159.64,519.51]",
+  "total": 1966.99,
+  "average": 393.398
+ },
+ {
+  "yyyy-mm": "2017-04",
+  "amounts": "[54,950,111,49,649]",
+  "total": 1813,
+  "average": 362.6
+ }
+]

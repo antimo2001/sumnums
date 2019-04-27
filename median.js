@@ -2,10 +2,9 @@ const debug = require('debug')('median');
 
 /** Calculate the median number given the array of numbers */
 const median = (numbers) => {
-  /** Filter, then sort to avoid sorting the original array */
-  const sorted = numbers.filter(n => true).sort();
+  /** Map and sort to avoid sorting the original array */
+  const sorted = numbers.map(n => n).sort();
   let mid = sorted.length / 2;
-  // let bothmiddles = [mid - 1, mid];
   // debug(`mid==${mid}`);
 
   const medians = sorted.filter((n, i) => {
