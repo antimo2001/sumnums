@@ -18,6 +18,11 @@
         "showReuseMessage": true,
         "clear": true
       }
+    },
+    {
+      "type": "npm",
+      "script": "bill:month",
+      "problemMatcher": []
     }
   ]
 }
