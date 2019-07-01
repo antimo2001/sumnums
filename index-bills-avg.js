@@ -12,10 +12,10 @@ function stringify(...args) {
 };
 
 //Define the minimum total bills for that month
-const minimumTotal = 5;
-const MIN_INTERNET_BILL = 44;
+const minimumTotal = 4;
+const MIN_INTERNET_BILL = 35;
 
-//Find only the month's that have the minimum-total of bills: 5
+//Find only the month's that have the minimum-total of bills
 let filterby = Object.keys(bills).filter(b => {
   return bills[b].length >= minimumTotal && b !== 'current';
 });
@@ -28,7 +28,7 @@ let monthlyreport = filterby.map(month => {
   debug(`bills[${month}]===${otherbills}`);
 
   //Assert that internet bill is the first in array of bills
-  assert(MIN_INTERNET_BILL<=internetbill, `failed at asserting that ${MIN_INTERNET_BILL} <= ${internetbill}`);
+  assert(internetbill >= MIN_INTERNET_BILL, `failed at asserting that ${internetbill} >= ${MIN_INTERNET_BILL}`);
 
   //Subtract internet bill since i pay that with credit cards and i sum all credit cards already
   const sum = sumnums(otherbills);
