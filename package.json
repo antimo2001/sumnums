@@ -4,6 +4,7 @@
   "description": "Sum numbers together",
   "main": "index.js",
   "scripts": {
+    "angielist": "angielist; search for good credit union around orlando",
     "build": "npm run bill:year",
     "test": "SET DEBUG=sumnums:* && node index-bills-avg",
     "test4": "SET DEBUG=sumnums:* && node index 1,2,3",
